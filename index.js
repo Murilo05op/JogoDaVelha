@@ -62,6 +62,8 @@ btnNewPlay.addEventListener('click', function () {
   squares.forEach( function (square) {
     square.dataset.enable = 'true'
     square.innerText = ''
+    square.remo
+    square.classList.remove('win')
   })
 })
 
@@ -116,6 +118,10 @@ function verificaVencedor() {
       winner = 'X'
       player1.dataset.points++
       document.getElementById('p1').innerText = player1.value + ': ' + player1.dataset.points + ' pontos'
+      
+      squares[pos[0]].classList.add('win')
+      squares[pos[1]].classList.add('win')
+      squares[pos[2]].classList.add('win')
     }
     else if(
       squares[pos[0]].dataset.enable === 'false' && squares[pos[0]].innerText === 'O' &&
@@ -127,6 +133,9 @@ function verificaVencedor() {
       player2.dataset.points++
       document.getElementById('p2').innerText = player2.value + ': ' + player2.dataset.points + ' pontos'
       
+      squares[pos[0]].classList.add('win')
+      squares[pos[1]].classList.add('win')
+      squares[pos[2]].classList.add('win')
     }
   })
   return winner
@@ -146,10 +155,3 @@ function verificaEmpate () {
   }
   return empate
 }
-
-// function clearTable () {
-//   squares.forEach( function (square) {
-//     square.dataset.enable = 'false'
-//     square.innerText = ''
-//   })
-// }

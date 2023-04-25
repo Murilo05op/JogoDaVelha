@@ -85,3 +85,7 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+.win {
+  background-color: chartreuse;
+}
