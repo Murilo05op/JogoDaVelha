@@ -1,0 +1,44 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  /* margin: 0 auto;
+  max-width: 17rem; */
+  /* text-align: center; */
+}
+
+.config {
+  margin: 0 auto;
+}
+
+.section2 {
+  text-align: center;
+}
+
+.table {
+  display: grid;
+  /* justify-content: center; */
+  /* align-items: center; */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 26rem;
+  margin: 0 auto;
+  background-color: black;
+}
+.square {
+  /* justify-content: center;
+  align-items: center;
+  grid-column: unset; */
+  background-color: #fff;
+
+  height: 8rem;
+  width: 8rem;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.table {
+  transition: 10s;
+}

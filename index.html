@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+  <title>Jogo da velha</title>
+</head>
+<body>
+  <h1>Jogo da velha</h1>
+  <hr>
+
+  <main>
+    <div class="config">
+      <label for="player1">Nome 1, X:</label>
+      <input class="players" type="text" id="player1" data-points="0"><br><br>
+      <label for="player2">Nome 2, O:</label>
+      <input class="players" type="text" id="player2" data-points="0"><br><br>
+  
+      <button id="play">Play</button>
+      <button id="nPlay" disabled>Outra Partida</button>
+      <button id="reset" disabled>Novo Jogo</button>
+
+      <hr>
+      <h2 id="p1"></h2>
+      <h2 id="p2"></h2>
+      <h2 id="velha"></h2>
+    </div>
+  
+    <div class="section2">
+      <h1 class="player" data-atual="">Vez de: </h1>
+      <div class="table">
+        <span class="square" data-value="1" data-enable="false"></span>
+        <span class="square" data-value="2" data-enable="false"></span>
+        <span class="square" data-value="3" data-enable="false"></span>
+        <span class="square" data-value="4" data-enable="false"></span>
+        <span class="square" data-value="5" data-enable="false"></span>
+        <span class="square" data-value="6" data-enable="false"></span>
+        <span class="square" data-value="7" data-enable="false"></span>
+        <span class="square" data-value="8" data-enable="false"></span>
+        <span class="square" data-value="9" data-enable="false"></span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
